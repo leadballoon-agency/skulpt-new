@@ -90,26 +90,16 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
               <p className="text-center text-sm text-neutral-600 mb-3">
                 Prefer to speak to us directly?
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex justify-center">
                 <a
-                  href="tel:+441295985001"
+                  href="tel:+447476903007"
                   onClick={trackPhoneClick}
                   className="inline-flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
                 >
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  01295 985 001
-                </a>
-                <a
-                  href="tel:+447826755534"
-                  onClick={trackPhoneClick}
-                  className="inline-flex items-center justify-center border-2 border-primary-500 text-primary-600 hover:bg-primary-50 px-4 py-2 rounded-full text-sm font-medium transition-colors"
-                >
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  07826 755534
+                  07476 903007
                 </a>
               </div>
               <p className="text-center text-xs text-neutral-500 mt-3">

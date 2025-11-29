@@ -173,10 +173,7 @@ export default function PrivacyPolicy() {
               <p className="text-neutral-700">54 Bloxham Road</p>
               <p className="text-neutral-700">Banbury, Oxfordshire OX16 9JR</p>
               <p className="text-neutral-700 mt-3">
-                <strong>Phone:</strong> <a href="tel:+441295985001" className="text-primary-600 hover:text-primary-700">01295 985 001</a>
-              </p>
-              <p className="text-neutral-700">
-                <strong>Mobile:</strong> <a href="tel:+447826755534" className="text-primary-600 hover:text-primary-700">07826 755534</a>
+                <strong>Phone:</strong> <a href="tel:+447476903007" className="text-primary-600 hover:text-primary-700">07476 903007</a>
               </p>
               <p className="text-neutral-700">
                 <strong>Email:</strong> <a href="mailto:quartzaesthetics@gmail.com" className="text-primary-600 hover:text-primary-700">quartzaesthetics@gmail.com</a>

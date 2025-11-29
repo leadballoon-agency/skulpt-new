@@ -25,7 +25,7 @@ export default function StructuredData() {
       "latitude": "52.0629",
       "longitude": "-1.3397"
     },
-    "telephone": "+441295985001",
+    "telephone": "+447476903007",
     "email": "quartzaesthetics@gmail.com",
     "priceRange": "££",
     "openingHours": [
@@ -50,20 +50,10 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Lipofirm Course of 6 Sessions",
-            "description": "6 weekly skin tightening sessions for optimal collagen stimulation and visible skin firming - ideal for post-weight loss loose skin"
+            "name": "Full Course - 8 Lipofirm Sessions",
+            "description": "8 weekly skin tightening sessions for complete skin transformation - ideal for post-weight loss loose skin from Ozempic, Wegovy or Mounjaro"
           },
-          "price": "480",
-          "priceCurrency": "GBP"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Lipofirm Course of 12 Sessions",
-            "description": "12 sessions for complete skin transformation - best for significant weight loss from Ozempic, Wegovy or Mounjaro"
-          },
-          "price": "900",
+          "price": "640",
           "priceCurrency": "GBP"
         }
       ]
@@ -146,7 +136,7 @@ export default function StructuredData() {
       "longitude": "-1.3397"
     },
     "url": "https://skintightbanbury.co.uk",
-    "telephone": "+441295985001",
+    "telephone": "+447476903007",
     "email": "quartzaesthetics@gmail.com",
     "priceRange": "££",
     "openingHoursSpecification": [
@@ -231,7 +221,7 @@ export default function StructuredData() {
     "availableChannel": {
       "@type": "ServiceChannel",
       "serviceUrl": "https://skintightbanbury.co.uk",
-      "serviceSmsNumber": "+447826755534"
+      "serviceSmsNumber": "+447476903007"
     },
     "category": "Beauty Treatment",
     "hasOfferCatalog": {
@@ -247,17 +237,10 @@ export default function StructuredData() {
         },
         {
           "@type": "Offer",
-          "name": "Course of 6 Sessions",
-          "price": "480",
+          "name": "Full Course - 8 Sessions",
+          "price": "640",
           "priceCurrency": "GBP",
-          "description": "6 skin tightening sessions for optimal collagen stimulation - ideal for post-weight loss loose skin"
-        },
-        {
-          "@type": "Offer",
-          "name": "Course of 12 Sessions",
-          "price": "900",
-          "priceCurrency": "GBP",
-          "description": "Complete skin transformation - best for significant weight loss from GLP-1 medications"
+          "description": "8 weekly skin tightening sessions for complete transformation - ideal for post-weight loss loose skin from GLP-1 medications"
         }
       ]
     }
@@ -312,7 +295,7 @@ export default function StructuredData() {
         "name": "How many sessions will I need?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For optimal results, we recommend a course of 6 sessions (one per week) at £480. For more significant skin laxity after substantial weight loss, a course of 12 sessions at £900 delivers the best transformation. You'll start seeing improvements from session 3-4."
+          "text": "A full course is 8 weekly sessions at £640. This gives optimal results for skin tightening after weight loss. You'll start seeing improvements from session 3-4, with full results visible after completing the course."
         }
       },
       {

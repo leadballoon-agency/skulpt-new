@@ -84,25 +84,13 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
     const area = assessmentAnswers[2]
     const laxity = assessmentAnswers[3]
 
-    // Course of 12 for significant weight loss or multiple areas with significant laxity
-    if (laxity === 'significant' || (area === 'multiple' && (cause === 'ozempic' || cause === 'mounjaro' || cause === 'natural'))) {
+    // Full course of 8 for significant weight loss or GLP-1 users
+    if (laxity === 'significant' || laxity === 'moderate' || cause === 'ozempic' || cause === 'mounjaro' || cause === 'natural' || area === 'multiple') {
       return {
-        treatment: 'Course of 12 Sessions',
-        price: '£900',
-        oldPrice: '£1200',
-        description: 'Complete skin transformation package. Ideal for significant skin laxity after major weight loss. Maximum collagen stimulation across multiple areas.',
-        isSuitable: true,
-        isBestValue: true
-      }
-    }
-
-    // Course of 6 for moderate laxity or GLP-1 users
-    if (laxity === 'moderate' || cause === 'ozempic' || cause === 'mounjaro') {
-      return {
-        treatment: 'Course of 6 Sessions',
-        price: '£480',
-        oldPrice: '£600',
-        description: 'Our most popular package for post-weight loss skin tightening. 6 sessions for optimal collagen stimulation and visible firming results.',
+        treatment: 'Full Course - 8 Sessions',
+        price: '£640',
+        oldPrice: '£792',
+        description: 'Complete skin transformation package. 8 weekly sessions for optimal collagen stimulation and visible firming results. Ideal for post-weight loss skin tightening.',
         isSuitable: true,
         isBestValue: true
       }
@@ -113,17 +101,17 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
       return {
         treatment: 'Single Lipofirm Session',
         price: '£99',
-        description: 'Try our RF skin tightening treatment. Perfect for mild concerns or to experience the treatment before committing to a course.',
+        description: 'Try our RF skin tightening treatment. Perfect for mild concerns or to experience the treatment before committing to a full course.',
         isSuitable: true
       }
     }
 
-    // Default to course of 6
+    // Default to full course of 8
     return {
-      treatment: 'Course of 6 Sessions',
-      price: '£480',
-      oldPrice: '£600',
-      description: 'Our recommended package for visible skin tightening results. Stimulates collagen production over 6 weekly sessions.',
+      treatment: 'Full Course - 8 Sessions',
+      price: '£640',
+      oldPrice: '£792',
+      description: 'Our recommended package for visible skin tightening results. Stimulates collagen production over 8 weekly sessions.',
       isSuitable: true,
       isBestValue: true
     }

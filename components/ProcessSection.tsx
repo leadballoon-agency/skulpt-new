@@ -30,7 +30,7 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
       title: 'Collagen Rebuilding',
       description: 'Skin continues to tighten as new collagen forms over weeks',
       icon: '📈',
-      duration: '6-12 sessions'
+      duration: '8 weekly sessions'
     }
   ]
 

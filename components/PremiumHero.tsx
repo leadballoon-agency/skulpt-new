@@ -42,10 +42,10 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
               <p className="text-white font-bold text-xs sm:text-sm mb-3 tracking-wide">SPECIAL OFFER - Limited Availability</p>
               <div className="flex justify-center">
                 <div className="text-center bg-white/20 backdrop-blur rounded-xl p-4 sm:p-6 shadow-md max-w-xs w-full">
-                  <p className="text-3xl sm:text-5xl font-bold text-white mb-1">£480</p>
-                  <p className="text-sm sm:text-base text-white font-medium">Course of 6 Sessions</p>
-                  <p className="text-xs text-white/70 mt-2 font-semibold line-through">Usually £600</p>
-                  <p className="text-sm text-white mt-1 font-bold">SAVE £120!</p>
+                  <p className="text-3xl sm:text-5xl font-bold text-white mb-1">£640</p>
+                  <p className="text-sm sm:text-base text-white font-medium">Full Course - 8 Sessions</p>
+                  <p className="text-xs text-white/70 mt-2 font-semibold line-through">Usually £792</p>
+                  <p className="text-sm text-white mt-1 font-bold">SAVE £152!</p>
                 </div>
               </div>
               <p className="text-xs sm:text-sm text-white/90 mt-3 sm:mt-4 text-center font-medium">Pay Monthly Available • No Downtime Required</p>

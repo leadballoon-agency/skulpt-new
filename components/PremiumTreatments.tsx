@@ -18,25 +18,14 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
     },
     {
       icon: '✨',
-      title: 'Course of 6 Sessions',
-      description: 'Best results for post-weight loss skin',
-      features: ['6 full sessions', 'Maximum skin tightening', 'Collagen stimulation', 'Payment plans available'],
-      price: '£480',
-      oldPrice: '£600',
+      title: 'Full Course - 8 Sessions',
+      description: 'Complete skin transformation',
+      features: ['8 weekly sessions', 'Maximum collagen stimulation', 'Full skin tightening results', 'Payment plans available'],
+      price: '£640',
+      oldPrice: '£792',
       gradient: 'from-primary-500 to-primary-700',
       popular: true,
       badge: 'BEST VALUE'
-    },
-    {
-      icon: '💎',
-      title: 'Course of 12 Sessions',
-      description: 'Complete skin transformation',
-      features: ['12 full sessions', 'Full body skin tightening', 'Best value per session', 'Ideal for significant weight loss'],
-      price: '£900',
-      oldPrice: '£1200',
-      gradient: 'from-green-400 to-emerald-600',
-      popular: false,
-      badge: 'SAVE £300'
     }
   ]
 
@@ -108,7 +97,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
                   </div>
                   <button
                     onClick={() => {
-                      if (treatment.title === 'Course of 6 Sessions') {
+                      if (treatment.title === 'Full Course - 8 Sessions') {
                         trackPRPDealView()
                       }
                       onBookingClick?.()

@@ -9,7 +9,7 @@ interface ModelDayModalProps {
 }
 
 export default function ModelDayModal({ isOpen, onClose }: ModelDayModalProps) {
-  const whatsappNumber = '447826755534'
+  const whatsappNumber = '447476903007'
   const whatsappMessage = encodeURIComponent(
     `Hi Quartz Aesthetics! I'd like to apply for your Lipofirm Model programme.
 

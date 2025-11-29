@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: 'How many treatments will I need?',
-    answer: "For optimal skin tightening results, we recommend a course of 6-12 sessions depending on the degree of skin laxity and the area being treated. Clients who've experienced significant weight loss may benefit from the full 12-session course. Sessions are typically scheduled weekly or bi-weekly."
+    answer: "A full course is 8 weekly sessions, which gives optimal skin tightening results. This allows your body time to produce new collagen between sessions. You'll start seeing improvements from session 3-4, with full results visible after completing the course."
   },
   {
     question: 'Which areas can be treated for skin tightening?',
