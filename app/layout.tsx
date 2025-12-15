@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     images: [
       {
-        url: 'https://skintight.uk/images/clinic/hero-image.jpeg',
+        url: 'https://skintight.uk/images/lift-tighten-define.png',
         width: 1200,
         height: 630,
-        alt: 'Skulpt Body Contouring - Skin Tightening Specialist in Peterborough',
+        alt: 'Skulpt Body Contouring - Lift, Tighten & Define - Skin Tightening Specialist in Peterborough',
       },
     ],
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Post-Ozempic Skin Tightening Peterborough | Skulpt Body Contouring',
     description: 'Tighten loose skin after weight loss. Medical-grade skin tightening - no surgery, no downtime. £50 Consultation & Treatment.',
-    images: ['https://skintight.uk/images/clinic/hero-image.jpeg'],
+    images: ['https://skintight.uk/images/lift-tighten-define.png'],
   },
   robots: {
     index: true,

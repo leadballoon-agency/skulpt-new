@@ -9,7 +9,7 @@ export default function StructuredData() {
       "https://skintight.uk"
     ],
     "logo": "https://skintight.uk/images/logo.png",
-    "image": "https://skintight.uk/images/clinic/hero-image.jpeg",
+    "image": "https://skintight.uk/images/lift-tighten-define.png",
     "description": "Specialist body contouring and skin tightening clinic in Peterborough. Helping clients tighten loose skin after weight loss from Ozempic, Wegovy, Mounjaro or natural methods. Medical-grade technology with visible results.",
     "address": {
       "@type": "PostalAddress",
@@ -121,7 +121,7 @@ export default function StructuredData() {
     "@type": "BeautySalon",
     "name": "Skulpt Body Contouring",
     "alternateName": "Post-Ozempic Skin Tightening Peterborough",
-    "image": "https://skintight.uk/images/clinic/hero-image.jpeg",
+    "image": "https://skintight.uk/images/lift-tighten-define.png",
     "description": "Specialist body contouring clinic in Peterborough. Helping clients tighten loose skin after weight loss from Ozempic, Wegovy, Mounjaro. Medical-grade treatments with visible results, zero downtime.",
     "address": {
       "@type": "PostalAddress",
