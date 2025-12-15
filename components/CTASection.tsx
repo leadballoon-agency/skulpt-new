@@ -34,19 +34,19 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📞</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Call Us</h3>
             <a
-              href="tel:+447476903007"
+              href="tel:+447700173390"
               onClick={trackPhoneClick}
               className="text-white/90 hover:text-white text-sm sm:text-base block"
             >
-              07476 903007
+              07700 173390
             </a>
           </div>
 
           <div className="bg-white/10 backdrop-blur rounded-xl sm:rounded-2xl p-4 sm:p-6">
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📧</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Email</h3>
-            <a href="mailto:quartzaesthetics@gmail.com" className="text-white/90 hover:text-white text-xs sm:text-sm">
-              quartzaesthetics@gmail.com
+            <a href="mailto:info@skintight.uk" className="text-white/90 hover:text-white text-xs sm:text-sm">
+              info@skintight.uk
             </a>
           </div>
 
@@ -54,7 +54,7 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📍</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Visit</h3>
             <p className="text-white/90 text-sm leading-relaxed">
-              The Wellness Centre<br />54 Bloxham Road<br />Banbury, OX16 9JR
+              Skulpt Body Contouring<br />Peterborough<br />United Kingdom
             </p>
           </div>
         </div>
@@ -76,13 +76,13 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
                 <span key={i} className="text-yellow-400 text-lg sm:text-xl">★</span>
               ))}
             </div>
-            <p className="text-xs sm:text-sm text-white/80">5.0 on Google</p>
+            <p className="text-xs sm:text-sm text-white/80">59 Reviews on Google</p>
           </div>
 
           <div className="hidden sm:block w-px h-12 bg-white/30"></div>
 
           <div className="text-center">
-            <p className="text-xl sm:text-2xl font-bold mb-0.5 sm:mb-1">100+</p>
+            <p className="text-xl sm:text-2xl font-bold mb-0.5 sm:mb-1">1000+</p>
             <p className="text-xs sm:text-sm text-white/80">Treatments Completed</p>
           </div>
 
@@ -90,7 +90,7 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
 
           <div className="text-center">
             <p className="text-xl sm:text-2xl font-bold mb-0.5 sm:mb-1">Expert</p>
-            <p className="text-xs sm:text-sm text-white/80">Practitioner</p>
+            <p className="text-xs sm:text-sm text-white/80">Team</p>
           </div>
         </div>
       </div>

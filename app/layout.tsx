@@ -10,42 +10,42 @@ import ScrollToTop from '@/components/ScrollToTop'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Post-Ozempic Skin Tightening Banbury | Loose Skin After Weight Loss | Quartz Aesthetics',
-  description: 'Tighten loose skin after Ozempic, Wegovy or Mounjaro weight loss. Lipofirm RF skin tightening in Banbury stimulates collagen for firmer skin. No surgery, no downtime. From £99. Book your free consultation.',
-  keywords: 'post Ozempic skin tightening, Wegovy loose skin treatment, Mounjaro skin laxity, GLP-1 weight loss skin, Lipofirm Banbury, skin tightening Banbury, loose skin after weight loss, RF skin tightening, collagen stimulation, non-surgical skin tightening, Quartz Aesthetics, body contouring Oxfordshire',
-  authors: [{ name: 'Quartz Aesthetics' }],
-  creator: 'Quartz Aesthetics',
-  publisher: 'Quartz Aesthetics',
+  title: 'Post-Ozempic Skin Tightening Peterborough | Loose Skin After Weight Loss | Skulpt Body Contouring',
+  description: 'Tighten loose skin after Ozempic, Wegovy or Mounjaro weight loss. Medical-grade skin tightening in Peterborough stimulates collagen for firmer skin. No surgery, no downtime. £50 Consultation & Treatment. Book your free consultation.',
+  keywords: 'post Ozempic skin tightening, Wegovy loose skin treatment, Mounjaro skin laxity, GLP-1 weight loss skin, skin tightening Peterborough, loose skin after weight loss, RF skin tightening, collagen stimulation, non-surgical skin tightening, Skulpt Body Contouring, body contouring Peterborough',
+  authors: [{ name: 'Skulpt Body Contouring' }],
+  creator: 'Skulpt Body Contouring',
+  publisher: 'Skulpt Body Contouring',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://skintightbanbury.co.uk'),
+  metadataBase: new URL('https://skintight.uk'),
   alternates: {
-    canonical: 'https://skintightbanbury.co.uk',
+    canonical: 'https://skintight.uk',
   },
   openGraph: {
-    title: 'Post-Ozempic Skin Tightening | Tighten Loose Skin After Weight Loss | Quartz Aesthetics Banbury',
-    description: 'Lost weight on Ozempic, Wegovy or Mounjaro? Tighten loose skin with Lipofirm RF technology. Non-surgical skin tightening in Banbury. From £99. No downtime.',
-    url: 'https://skintightbanbury.co.uk',
-    siteName: 'Quartz Aesthetics - Skin Tightening Banbury',
+    title: 'Post-Ozempic Skin Tightening | Tighten Loose Skin After Weight Loss | Skulpt Body Contouring Peterborough',
+    description: 'Lost weight on Ozempic, Wegovy or Mounjaro? Tighten loose skin with medical-grade technology. Non-surgical skin tightening in Peterborough. £50 Consultation & Treatment. No downtime.',
+    url: 'https://skintight.uk',
+    siteName: 'Skulpt Body Contouring - Skin Tightening Peterborough',
     type: 'website',
     locale: 'en_GB',
     images: [
       {
-        url: 'https://skintightbanbury.co.uk/images/Pamela-Crombie.jpeg',
+        url: 'https://skintight.uk/images/clinic/hero-image.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Pamela Crombie - Skin Tightening Specialist at Quartz Aesthetics Banbury',
+        alt: 'Skulpt Body Contouring - Skin Tightening Specialist in Peterborough',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Post-Ozempic Skin Tightening Banbury | Quartz Aesthetics',
-    description: 'Tighten loose skin after weight loss. Lipofirm RF skin tightening - no surgery, no downtime. From £99.',
-    images: ['https://skintightbanbury.co.uk/images/Pamela-Crombie.jpeg'],
+    title: 'Post-Ozempic Skin Tightening Peterborough | Skulpt Body Contouring',
+    description: 'Tighten loose skin after weight loss. Medical-grade skin tightening - no surgery, no downtime. £50 Consultation & Treatment.',
+    images: ['https://skintight.uk/images/clinic/hero-image.jpeg'],
   },
   robots: {
     index: true,
@@ -62,10 +62,10 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   other: {
-    'geo.region': 'GB-OXF',
-    'geo.placename': 'Banbury',
-    'geo.position': '52.0629;-1.3397',
-    'ICBM': '52.0629, -1.3397',
+    'geo.region': 'GB-CAM',
+    'geo.placename': 'Peterborough',
+    'geo.position': '52.5695;-0.2405',
+    'ICBM': '52.5695, -0.2405',
   },
 }
 

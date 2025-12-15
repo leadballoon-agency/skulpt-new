@@ -9,11 +9,11 @@ interface ModelDayModalProps {
 }
 
 export default function ModelDayModal({ isOpen, onClose }: ModelDayModalProps) {
-  const whatsappNumber = '447476903007'
+  const whatsappNumber = '447700173390'
   const whatsappMessage = encodeURIComponent(
-    `Hi Quartz Aesthetics! I'd like to apply for your Lipofirm Model programme.
+    `Hi Skulpt! I'd like to apply for your Model programme.
 
-I'm interested in being featured in your before & after gallery for skin tightening.
+I'm interested in being featured in your before & after gallery for body contouring.
 
 Here's a photo of my concern area:`
   )
@@ -68,7 +68,7 @@ Here's a photo of my concern area:`
             <div className="inline-flex items-center px-3 py-1 bg-white/20 rounded-full text-xs font-medium mb-2">
               LIMITED SPOTS
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold">Become a Lipofirm Model</h2>
+            <h2 className="text-xl sm:text-2xl font-bold">Become a Model</h2>
             <p className="text-white/90 text-sm leading-relaxed mt-2">
               Get exclusive rates on skin tightening in exchange for before & after photos
             </p>
@@ -86,9 +86,9 @@ Here's a photo of my concern area:`
               </h3>
               <ul className="space-y-2">
                 {[
-                  'Exclusive discounted skin tightening rates',
+                  'Exclusive discounted body contouring rates',
                   'Professional before & after photography',
-                  'Same expert RF treatment as full-price clients',
+                  'Same expert treatment as full-price clients',
                   'Be featured on our website & social media'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start text-sm sm:text-base text-neutral-700">
@@ -148,14 +148,14 @@ Here's a photo of my concern area:`
 
           {/* Call Option */}
           <a
-            href="tel:+447476903007"
+            href="tel:+447700173390"
             onClick={trackPhoneClick}
             className="flex items-center justify-center w-full text-primary-600 hover:text-primary-700 text-sm sm:text-base font-medium transition-colors"
           >
             <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
-            Prefer to call? 07476 903007
+            Prefer to call? 07700 173390
           </a>
         </div>
       </div>

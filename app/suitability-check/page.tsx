@@ -40,11 +40,11 @@ const buildDeclarationMessage = (name: string, selections: string[], category: C
   const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 
   if (selections.includes('none')) {
-    return `📋 LIPOFIRM SUITABILITY DECLARATION
+    return `📋 SKULPT SUITABILITY DECLARATION
 
 ✅ ALL CLEAR
 
-I, ${name}, confirm that on ${date} I have reviewed the Lipofirm contraindications list and declare that NONE of the listed conditions apply to me.
+I, ${name}, confirm that on ${date} I have reviewed the RF skin tightening contraindications list and declare that NONE of the listed conditions apply to me.
 
 I understand that:
 • I must inform the clinic if my health changes before treatment
@@ -54,7 +54,7 @@ I understand that:
 I am ready to proceed with booking my consultation.
 
 ---
-Submitted via Quartz Aesthetics Suitability Check`
+Submitted via Skulpt Body Contouring Suitability Check`
   }
 
   const selectedLabels = selections
@@ -68,11 +68,11 @@ Submitted via Quartz Aesthetics Suitability Check`
     notSuitable: '❌ NOT CURRENTLY SUITABLE'
   }
 
-  return `📋 LIPOFIRM SUITABILITY DECLARATION
+  return `📋 SKULPT SUITABILITY DECLARATION
 
 ${categoryText[category] || ''}
 
-I, ${name}, confirm that on ${date} I have reviewed the Lipofirm contraindications list and declare the following conditions apply to me:
+I, ${name}, confirm that on ${date} I have reviewed the RF skin tightening contraindications list and declare the following conditions apply to me:
 
 • ${selectedLabels}
 
@@ -86,7 +86,7 @@ ${category === 'consultation' ? 'I would like to discuss my options with the cli
 ${category === 'notSuitable' ? 'I understand treatment may not be suitable but would like to discuss further.' : ''}
 
 ---
-Submitted via Quartz Aesthetics Suitability Check`
+Submitted via Skulpt Body Contouring Suitability Check`
 }
 
 export default function SuitabilityCheckPage() {
@@ -135,7 +135,7 @@ export default function SuitabilityCheckPage() {
 
   const getWhatsAppLink = () => {
     const message = buildDeclarationMessage(name, selections, category)
-    return `https://wa.me/447476903007?text=${encodeURIComponent(message)}`
+    return `https://wa.me/447700173390?text=${encodeURIComponent(message)}`
   }
 
   const getEmailLink = () => {
@@ -147,7 +147,7 @@ export default function SuitabilityCheckPage() {
       : category === 'consultation'
       ? `Suitability Declaration - ${name} - Requires Discussion`
       : `Suitability Declaration - ${name} - Not Currently Suitable`
-    return `mailto:kerry@mail.skintightbanbury.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
+    return `mailto:info@skintight.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
   }
 
   return (
@@ -158,18 +158,18 @@ export default function SuitabilityCheckPage() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-10 h-10 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">QA</span>
+                <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="font-display font-bold text-lg text-neutral-900 hidden sm:block">Quartz Aesthetics</span>
+              <span className="font-display font-bold text-lg text-neutral-900 hidden sm:block">Skulpt Body Contouring</span>
             </Link>
             <a
-              href="tel:+447476903007"
+              href="tel:+447700173390"
               className="flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span className="hidden sm:inline">07476 903007</span>
+              <span className="hidden sm:inline">07700 173390</span>
             </a>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function SuitabilityCheckPage() {
                 Suitability Declaration
               </h1>
               <p className="text-neutral-600 max-w-md mx-auto">
-                Complete this quick check to confirm you&apos;re suitable for Lipofirm treatment. Your declaration will be sent to the clinic.
+                Complete this quick check to confirm you&apos;re suitable for RF skin tightening treatment. Your declaration will be sent to the clinic.
               </p>
             </div>
 
@@ -322,7 +322,7 @@ export default function SuitabilityCheckPage() {
                   Great News, {name.split(' ')[0]}!
                 </h2>
                 <p className="text-neutral-600 mb-6 leading-relaxed max-w-md mx-auto">
-                  Based on your answers, you appear to be a suitable candidate for Lipofirm treatment.
+                  Based on your answers, you appear to be a suitable candidate for RF skin tightening treatment.
                 </p>
 
                 {/* Declaration Preview */}
@@ -380,7 +380,7 @@ export default function SuitabilityCheckPage() {
                   Almost There, {name.split(' ')[0]}!
                 </h2>
                 <p className="text-neutral-600 mb-6 leading-relaxed max-w-md mx-auto">
-                  Your current situation is temporary. Once it resolves, you&apos;ll likely be a great candidate for Lipofirm.
+                  Your current situation is temporary. Once it resolves, you&apos;ll likely be a great candidate for our RF skin tightening treatment.
                 </p>
 
                 {/* Declaration Preview */}
@@ -436,7 +436,7 @@ export default function SuitabilityCheckPage() {
                 </h2>
                 <p className="text-neutral-600 mb-6 leading-relaxed max-w-md mx-auto">
                   Some conditions need a conversation before we can proceed — but that doesn&apos;t mean no!
-                  Many clients with similar conditions enjoy Lipofirm after a consultation.
+                  Many clients with similar conditions enjoy our treatments after a consultation.
                 </p>
 
                 {/* Declaration Preview */}
@@ -472,10 +472,10 @@ export default function SuitabilityCheckPage() {
                     Send via Email
                   </a>
                   <a
-                    href="tel:+447476903007"
+                    href="tel:+447700173390"
                     className="block w-full py-4 border-2 border-neutral-300 text-neutral-600 font-bold text-lg rounded-xl hover:bg-neutral-50 transition-all text-center"
                   >
-                    Call Us: 07476 903007
+                    Call Us: 07700 173390
                   </a>
                   <button
                     onClick={handleReset}
@@ -497,7 +497,7 @@ export default function SuitabilityCheckPage() {
                   Thank You, {name.split(' ')[0]}
                 </h2>
                 <p className="text-neutral-600 mb-4 leading-relaxed max-w-md mx-auto">
-                  Based on your answers, Lipofirm treatment isn&apos;t suitable for you at this time.
+                  Based on your answers, RF skin tightening treatment isn&apos;t suitable for you at this time.
                   Your safety is our top priority.
                 </p>
 

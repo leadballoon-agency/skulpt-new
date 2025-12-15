@@ -14,7 +14,7 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 72,
+          fontSize: 100,
           background: 'linear-gradient(135deg, #C9A227 0%, #A68520 100%)',
           width: '100%',
           height: '100%',
@@ -26,7 +26,7 @@ export default function AppleIcon() {
           borderRadius: '32px',
         }}
       >
-        QA
+        S
       </div>
     ),
     {

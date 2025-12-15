@@ -34,24 +34,23 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
             </h1>
 
             <p className="text-sm sm:text-lg md:text-xl text-neutral-600 leading-relaxed max-w-xl mx-auto lg:mx-0 px-2 sm:px-0">
-              Ozempic, Wegovy & Mounjaro help you lose weight - but what about the loose skin left behind? Lipofirm uses advanced RF technology to tighten and firm skin naturally. No surgery, no downtime.
+              Ozempic, Wegovy & Mounjaro help you lose weight - but what about the loose skin left behind? Our medical-grade technology tightens and firms skin naturally. No surgery, no downtime.
             </p>
 
-            {/* Offer Box - Clean styling without Black Friday */}
+            {/* Offer Box - Clean styling */}
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl p-5 sm:p-6 mx-auto lg:mx-0 max-w-xl shadow-lg">
-              <p className="text-white font-bold text-xs sm:text-sm mb-3 tracking-wide">GET STARTED TODAY</p>
+              <p className="text-white font-bold text-xs sm:text-sm mb-3 tracking-wide">LIMITED TIME OFFER</p>
               <div className="flex justify-center gap-3">
-                <div className="text-center bg-white/20 backdrop-blur rounded-xl p-4 shadow-md flex-1">
-                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">£99</p>
-                  <p className="text-xs sm:text-sm text-white font-medium">Consultation + 1st Session</p>
-                </div>
                 <div className="text-center bg-white/30 backdrop-blur rounded-xl p-4 shadow-md flex-1 border-2 border-white/50">
-                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">£770</p>
-                  <p className="text-xs sm:text-sm text-white font-medium">Full 8 Sessions</p>
-                  <p className="text-xs text-white/80 mt-1 line-through">£960</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">£50</p>
+                  <p className="text-xs sm:text-sm text-white font-medium">Consultation & Treatment</p>
+                </div>
+                <div className="text-center bg-white/20 backdrop-blur rounded-xl p-4 shadow-md flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">59</p>
+                  <p className="text-xs sm:text-sm text-white font-medium">5-Star Reviews</p>
                 </div>
               </div>
-              <p className="text-xs sm:text-sm text-white/90 mt-3 sm:mt-4 text-center font-medium">Pay Monthly Available • No Downtime Required</p>
+              <p className="text-xs sm:text-sm text-white/90 mt-3 sm:mt-4 text-center font-medium">Medical Grade Technology • No Downtime Required</p>
             </div>
 
             {/* CTA Buttons */}
@@ -97,65 +96,65 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
             </div>
           </div>
 
-          {/* Mobile Video Section - Simple and Clean */}
+          {/* Mobile Video Section - Square format */}
           <div className="relative mt-8 lg:hidden">
-            <div className="relative mx-auto max-w-[320px]">
+            <div className="relative mx-auto max-w-[320px] aspect-square">
               <video
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="rounded-2xl shadow-xl w-full"
+                className="rounded-2xl shadow-xl w-full h-full object-cover"
               >
                 <source
-                  src="https://storage.googleapis.com/msgsndr/GVVaIBlAD0WmNtFQQ6KJ/media/692b2099aaad9166afb65ed5.mp4"
+                  src="https://storage.googleapis.com/msgsndr/dVD6QbgqAF7fiHM3MCrz/media/68ccf6fc30c733533492d2e6.mp4"
                   type="video/mp4"
                 />
                 {/* Fallback for browsers that don't support video */}
                 <img
-                  src="/images/lipofirm-treatment.jpg"
-                  alt="Lipofirm Skin Tightening Treatment"
-                  className="rounded-2xl shadow-xl w-full"
+                  src="/images/stomach.png"
+                  alt="Skin Tightening Treatment Results"
+                  className="rounded-2xl shadow-xl w-full h-full object-cover"
                 />
               </video>
             </div>
           </div>
 
-          {/* Desktop Video Section */}
+          {/* Desktop Video Section - Square format */}
           <div className="relative mt-8 lg:mt-0 hidden lg:block">
-            <div className="relative h-[600px] flex items-center justify-center p-8">
+            <div className="relative flex items-center justify-center p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-primary-100 rounded-3xl"></div>
 
-              <div className="relative flex items-center justify-center h-full w-full">
-                {/* Main Video */}
-                <div className="relative w-full max-w-md">
+              <div className="relative flex items-center justify-center w-full">
+                {/* Main Video - Square */}
+                <div className="relative w-full max-w-lg aspect-square">
                   <video
                     autoPlay
                     muted
                     loop
                     playsInline
-                    className="rounded-2xl shadow-2xl w-full animate-float"
+                    className="rounded-2xl shadow-2xl w-full h-full object-cover animate-float"
                   >
                     <source
-                      src="https://storage.googleapis.com/msgsndr/GVVaIBlAD0WmNtFQQ6KJ/media/692b2099aaad9166afb65ed5.mp4"
+                      src="https://storage.googleapis.com/msgsndr/dVD6QbgqAF7fiHM3MCrz/media/68ccf6fc30c733533492d2e6.mp4"
                       type="video/mp4"
                     />
                     {/* Fallback for browsers that don't support video */}
                     <img
-                      src="/images/lipofirm-treatment.jpg"
-                      alt="Lipofirm Skin Tightening Treatment"
-                      className="rounded-2xl shadow-2xl w-full animate-float"
+                      src="/images/stomach.png"
+                      alt="Skin Tightening Treatment Results"
+                      className="rounded-2xl shadow-2xl w-full h-full object-cover animate-float"
                     />
                   </video>
                 </div>
               </div>
 
               {/* Info Card - Desktop Only */}
-              <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg">
-                <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-xl">
+              <div className="hidden lg:block absolute -bottom-4 left-1/2 -translate-x-1/2 w-full max-w-md">
+                <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-5 shadow-xl">
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-neutral-800 mb-2">Post-Weight Loss Skin Specialist</h3>
-                    <div className="flex justify-center items-center space-x-2 text-primary-600">
+                    <h3 className="text-lg font-bold text-neutral-800 mb-1">Post-Weight Loss Skin Specialist</h3>
+                    <div className="flex justify-center items-center space-x-2 text-primary-600 text-sm">
                       <span className="font-medium">RF Skin Tightening</span>
                       <span className="text-primary-300">•</span>
                       <span className="font-medium">Non-Surgical Solutions</span>

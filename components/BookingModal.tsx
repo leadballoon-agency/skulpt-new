@@ -19,7 +19,7 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
       const script = document.createElement('script')
       script.type = 'text/javascript'
       script.async = true
-      script.src = 'https://link.leadballoon.co.uk/js/form_embed.js'
+      script.src = 'https://link.skintight.uk/js/form_embed.js'
       document.body.appendChild(script)
 
       return () => {
@@ -78,10 +78,10 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
             {/* GHL Calendar Embed */}
             <div className="w-full min-h-[500px]">
               <iframe
-                src="https://link.leadballoon.co.uk/widget/booking/ItKSB3DOgERnbDFczvp7"
+                src="https://link.skintight.uk/widget/booking/85AnUNYWb63J1DyMo1g9"
                 style={{ width: '100%', minHeight: '600px', border: 'none', overflow: 'hidden' }}
                 scrolling="no"
-                id="ItKSB3DOgERnbDFczvp7_booking"
+                id="85AnUNYWb63J1DyMo1g9_1765795765717"
               />
             </div>
 
@@ -92,18 +92,18 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
               </p>
               <div className="flex justify-center">
                 <a
-                  href="tel:+447476903007"
+                  href="tel:+447700173390"
                   onClick={trackPhoneClick}
                   className="inline-flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
                 >
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  07476 903007
+                  07700 173390
                 </a>
               </div>
               <p className="text-center text-xs text-neutral-500 mt-3">
-                The Wellness Centre, 54 Bloxham Road, Banbury, OX16 9JR
+                Skulpt Body Contouring, Peterborough
               </p>
             </div>
           </div>

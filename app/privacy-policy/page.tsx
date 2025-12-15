@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy | Quartz Aesthetics',
-  description: 'Privacy Policy for Quartz Aesthetics Lipofirm Skin Tightening Treatments in Banbury',
+  title: 'Privacy Policy | Skulpt Body Contouring',
+  description: 'Privacy Policy for Skulpt Body Contouring Skin Tightening Treatments in Peterborough',
 }
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
             <p className="text-neutral-700 leading-relaxed">
-              Quartz Aesthetics ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website skintightbanbury.co.uk and use our services.
+              Skulpt Body Contouring ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website skintight.uk and use our services.
             </p>
           </section>
 
@@ -168,15 +168,14 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:
             </p>
             <div className="bg-white rounded-xl p-6 border border-neutral-200">
-              <p className="font-semibold mb-2">Quartz Aesthetics</p>
-              <p className="text-neutral-700">The Wellness Centre</p>
-              <p className="text-neutral-700">54 Bloxham Road</p>
-              <p className="text-neutral-700">Banbury, Oxfordshire OX16 9JR</p>
+              <p className="font-semibold mb-2">Skulpt Body Contouring</p>
+              <p className="text-neutral-700">Peterborough</p>
+              <p className="text-neutral-700">United Kingdom</p>
               <p className="text-neutral-700 mt-3">
-                <strong>Phone:</strong> <a href="tel:+447476903007" className="text-primary-600 hover:text-primary-700">07476 903007</a>
+                <strong>Phone:</strong> <a href="tel:+447700173390" className="text-primary-600 hover:text-primary-700">07700 173390</a>
               </p>
               <p className="text-neutral-700">
-                <strong>Email:</strong> <a href="mailto:quartzaesthetics@gmail.com" className="text-primary-600 hover:text-primary-700">quartzaesthetics@gmail.com</a>
+                <strong>Email:</strong> <a href="mailto:info@skintight.uk" className="text-primary-600 hover:text-primary-700">info@skintight.uk</a>
               </p>
             </div>
           </section>

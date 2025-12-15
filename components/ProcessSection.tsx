@@ -13,8 +13,8 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
     },
     {
       number: '02',
-      title: 'RF Skin Tightening',
-      description: 'Advanced radiofrequency technology stimulates collagen production',
+      title: 'Treatment Session',
+      description: 'UK medical-grade RF, vacuum & cavitation technology stimulates deep collagen production',
       icon: '🔬',
       duration: '30-45 mins'
     },
@@ -54,7 +54,7 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
             <span className="block gradient-text">Journey</span>
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-neutral-600 mt-2 sm:mt-3 max-w-2xl mx-auto px-4">
-            RF technology that stimulates your body's natural collagen production
+            UK medical-grade technology that stimulates your body's natural collagen production
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
                   <span className="text-2xl mr-2">✨</span>
                   <h4 className="font-bold text-primary-800">Non-Surgical Skin Tightening</h4>
                 </div>
-                <p className="text-sm leading-relaxed text-primary-700">Unlike surgical procedures, Lipofirm RF requires no recovery time. Perfect for tightening loose skin after weight loss from Ozempic, Wegovy or Mounjaro.</p>
+                <p className="text-sm leading-relaxed text-primary-700">Unlike surgical procedures, our RF treatment requires no recovery time. Perfect for tightening loose skin after weight loss from Ozempic, Wegovy or Mounjaro.</p>
               </div>
 
               <h3 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">

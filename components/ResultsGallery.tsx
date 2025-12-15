@@ -14,32 +14,34 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
 
   const results = [
     {
-      image: '/images/bum-before and after multi session.png',
-      title: 'Bum Lift & Tighten',
-      description: 'Visible lifting and skin tightening after course of treatments',
-      time: 'Multi-Session Results',
+      image: '/images/stomach.png',
+      title: 'Tummy Tightening',
+      description: 'Firm loose abdominal skin after weight loss',
+      time: 'Real Results',
       isAvailable: true,
       featured: true
     },
     {
-      image: '/images/tummy tightening.webp',
-      title: 'Tummy Tightening',
-      description: 'Firm loose abdominal skin after weight loss',
-      time: 'Results Vary',
+      image: '/images/bum.jpg',
+      title: 'Bum Lift & Tighten',
+      description: 'Visible lifting and skin tightening after treatments',
+      time: 'Real Results',
       isAvailable: true,
       featured: false
     },
     {
+      image: '/images/arms.jpg',
       title: 'Arm Sculpting',
       description: 'Reduced bingo wings and tighter skin',
-      time: 'Coming Soon',
+      time: 'Real Results',
       isAvailable: true,
       featured: false
     },
     {
+      image: '/images/legs.jpg',
       title: 'Thigh Contouring',
       description: 'Smoother, firmer thigh appearance',
-      time: 'Coming Soon',
+      time: 'Real Results',
       isAvailable: true,
       featured: false
     },
@@ -187,27 +189,20 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
 
         {/* Clinic Section - Mobile Optimized */}
         <div className="mt-8 sm:mt-12">
-          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium">
-            <img
-              src="/images/quartz-aesthetics-clinic-landscape.webp"
-              alt="Quartz Aesthetics Clinic in Banbury"
-              className="w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 flex items-center">
-              <div className="p-6 sm:p-8 md:p-12">
-                <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
-                  Welcome to Quartz Aesthetics
-                </h3>
-                <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-6 max-w-lg">
-                  Visit our clinic at The Wellness Centre in Banbury for your skin tightening treatment. Professional, comfortable, and results-focused.
-                </p>
-                <button
-                  onClick={onBookingClick}
-                  className="inline-flex items-center bg-white text-primary-600 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300"
-                >
-                  Schedule Consultation
-                </button>
-              </div>
+          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium bg-gradient-to-br from-primary-500 to-primary-600">
+            <div className="p-6 sm:p-8 md:p-12">
+              <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
+                Welcome to Skulpt Body Contouring
+              </h3>
+              <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-6 max-w-lg">
+                Visit our clinic in Peterborough for your body contouring treatment. Professional, comfortable, and results-focused.
+              </p>
+              <button
+                onClick={onBookingClick}
+                className="inline-flex items-center bg-white text-primary-600 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300"
+              >
+                Schedule Consultation
+              </button>
             </div>
           </div>
         </div>
@@ -215,9 +210,9 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         {/* Stats Section - Mobile Optimized */}
         <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {[
-            { number: 'Expert', label: 'Practitioner' },
-            { number: '100+', label: 'Treatments Completed' },
-            { number: '£770', label: 'Full Course (8)' },
+            { number: 'Expert', label: 'Team' },
+            { number: '1000+', label: 'Treatments Completed' },
+            { number: '£50', label: 'Consultation & Treatment' },
             { number: '0', label: 'Downtime' }
           ].map((stat, index) => (
             <div key={index} className="text-center">

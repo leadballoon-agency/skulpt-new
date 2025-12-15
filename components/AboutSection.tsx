@@ -5,16 +5,16 @@ interface AboutSectionProps {
 export default function AboutSection({ onBookingClick }: AboutSectionProps) {
   const practitioners = [
     {
-      name: 'Pamela Crombie',
-      title: 'Founder & Skin Tightening Specialist',
-      image: '/images/Pamela-Crombie.jpeg',
-      bio: "As the founder of Quartz Aesthetics, I specialise in helping clients who've experienced significant weight loss - whether through GLP-1 medications like Ozempic and Wegovy, or traditional methods - to tighten and firm their loose skin. Using advanced RF technology, Lipofirm stimulates your body's natural collagen production to restore skin firmness without surgery or downtime. Based in Banbury, I'm passionate about helping you feel confident in your transformed body.",
+      name: 'Michelle & Magda',
+      title: 'Your Expert Team at Skulpt',
+      image: '/images/clinic/hero-image.jpeg',
+      bio: "At Skulpt Body Contouring, Michelle and Magda bring years of experience helping clients achieve their body goals. Whether you've lost weight through GLP-1 medications like Ozempic and Wegovy, or traditional methods, our team specialises in tightening loose skin and contouring your body using advanced medical-grade technology. Based in Peterborough, we're passionate about helping you feel confident in your transformed body with treatments that deliver real results.",
       qualifications: [
-        'Post-Weight Loss Skin Expert',
-        'Lipofirm Treatment Specialist',
-        'RF Technology Certified',
-        'Collagen Stimulation Therapy',
-        'Non-Surgical Body Contouring'
+        'Post-Weight Loss Skin Experts',
+        'ProMax Lipo Specialists',
+        'Advanced Body Contouring',
+        'Lymphatic Drainage Therapy',
+        'Non-Surgical Fat Reduction'
       ]
     }
   ]
@@ -23,7 +23,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
     <section id="about" className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto section-padding">
         <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Your Skin Tightening Expert</span>
+          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Meet Your Experts</span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mt-2 sm:mt-3">
             Specialist in Post-Weight Loss
             <span className="block gradient-text">Skin Tightening</span>
@@ -36,15 +36,15 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
         <div className="max-w-2xl mx-auto">
           {practitioners.map((practitioner, index) => (
             <div key={index} className="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-premium hover:shadow-premium-lg transition-all duration-300">
-              {/* Practitioner Image */}
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg mb-6">
-                <div className="aspect-[4/5] relative">
-                  <img
-                    src={practitioner.image}
-                    alt={`${practitioner.name} - ${practitioner.title}`}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-100/10 to-primary-300/10"></div>
+              {/* Practitioner Image Placeholder - Replace with actual team photo */}
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg mb-6 bg-gradient-to-br from-primary-100 to-primary-200">
+                <div className="aspect-[4/3] relative flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 bg-white/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-4xl sm:text-5xl font-bold text-primary-600">M&M</span>
+                    </div>
+                    <p className="text-primary-700 font-medium text-sm">Photo coming soon</p>
+                  </div>
                 </div>
               </div>
 

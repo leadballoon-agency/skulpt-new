@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { trackAssessmentStart, trackAssessmentComplete } from './FacebookPixel'
-import AssessmentModal from './AssessmentModal'
 
 interface AssessmentToolProps {
   onBookingClick?: () => void
@@ -12,7 +11,6 @@ interface AssessmentToolProps {
 export default function AssessmentTool({ onBookingClick, onAssessmentComplete }: AssessmentToolProps) {
   const [step, setStep] = useState(1)
   const [answers, setAnswers] = useState<any>({})
-  const [showModal, setShowModal] = useState(false)
 
   const questions = [
     {
@@ -81,50 +79,26 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
 
   const getRecommendation = (assessmentAnswers: any = answers) => {
     const cause = assessmentAnswers[1]
-    const area = assessmentAnswers[2]
     const laxity = assessmentAnswers[3]
 
-    // Full course of 8 for significant weight loss or GLP-1 users
-    if (laxity === 'significant' || cause === 'ozempic' || cause === 'mounjaro' || area === 'multiple') {
-      return {
-        treatment: 'Full Course - 8 Sessions',
-        price: '£770',
-        oldPrice: '£960',
-        description: 'Complete skin transformation package. 8 weekly sessions for optimal collagen stimulation and visible firming results. Ideal for post-weight loss skin tightening.',
-        isSuitable: true,
-        isBestValue: true
-      }
+    const isGLP1User = cause === 'ozempic' || cause === 'mounjaro'
+
+    // Personalised message based on assessment
+    let description = 'Start with a consultation and your first treatment session. Michelle will assess your skin and create a personalised treatment plan tailored to your goals.'
+
+    if (laxity === 'significant') {
+      description = 'For significant skin laxity, a personalised course will give you the best results. Your consultation includes a first treatment so you can experience the technology, then Michelle will create a tailored plan for your transformation.'
+    } else if (laxity === 'moderate') {
+      description = 'For moderate concerns, a course of treatments typically works best. Your consultation includes a first treatment, then Michelle will recommend exactly how many sessions you need for optimal results.'
+    } else if (isGLP1User) {
+      description = 'Post-GLP-1 skin responds brilliantly to our treatment. Your consultation includes a first session so you can see the technology in action, then Michelle will create a plan based on your specific needs.'
     }
 
-    // 4 session course for moderate concerns
-    if (laxity === 'moderate' || cause === 'natural' || cause === 'pregnancy') {
-      return {
-        treatment: '4 Session Course',
-        price: '£380',
-        oldPrice: '£480',
-        description: '4 weekly sessions for visible skin firming. Great for moderate concerns or targeted treatment areas.',
-        isSuitable: true
-      }
-    }
-
-    // Consultation + first session for mild concerns or first-timers
-    if (laxity === 'mild' || cause === 'aging' || cause === 'other') {
-      return {
-        treatment: 'Consultation + First Session',
-        price: '£99',
-        description: 'Try our RF skin tightening treatment with a full consultation. Perfect to experience the treatment before committing to a course.',
-        isSuitable: true
-      }
-    }
-
-    // Default to full course of 8
     return {
-      treatment: 'Full Course - 8 Sessions',
-      price: '£770',
-      oldPrice: '£960',
-      description: 'Our recommended package for visible skin tightening results. Stimulates collagen production over 8 weekly sessions.',
-      isSuitable: true,
-      isBestValue: true
+      treatment: 'Consultation + First Treatment',
+      price: '£50',
+      description,
+      isSuitable: true
     }
   }
 
@@ -200,11 +174,7 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
               <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-4 sm:mb-6 border-2 bg-gradient-to-br from-primary-50 to-white border-primary-100">
                 <h4 className="text-lg sm:text-xl font-bold mb-2 text-primary-600">
                   {getRecommendation().treatment}
-                  {getRecommendation().isBestValue && <span className="ml-2 text-xs bg-primary-100 text-primary-700 px-2 py-0.5 rounded-full">RECOMMENDED</span>}
                 </h4>
-                {getRecommendation().oldPrice && (
-                  <p className="text-sm text-neutral-400 line-through mb-1">{getRecommendation().oldPrice}</p>
-                )}
                 <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 gradient-text">
                   {getRecommendation().price}
                 </p>
@@ -217,9 +187,9 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
                 <div className="flex items-start gap-3">
                   <div className="text-2xl">✅</div>
                   <div>
-                    <p className="text-sm text-green-900 font-medium mb-1">No Downtime Required</p>
+                    <p className="text-sm text-green-900 font-medium mb-1">UK Medical-Grade Technology</p>
                     <p className="text-sm text-green-800">
-                      Lipofirm RF is a comfortable treatment with no recovery time. Return to normal activities immediately.
+                      Professional clinical equipment combining RF, vacuum & cavitation - not cheap imports. No downtime, return to normal activities immediately.
                     </p>
                   </div>
                 </div>
@@ -247,17 +217,6 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
           )}
         </div>
       </div>
-
-      {/* Assessment Modal */}
-      <AssessmentModal
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-        initialData={{
-          skinType: answers[1],
-          concern: answers[2],
-          age: answers[3]
-        }}
-      />
     </section>
   )
 }

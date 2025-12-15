@@ -5,11 +5,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 **Template Type:** Aesthetic Clinic Landing Page with Lead Capture Assessment
-**Current Instance:** Quartz Aesthetics - Lipofirm RF Skin Tightening
-**Domain:** skintightbanbury.co.uk
+**Current Instance:** Skulpt Body Contouring - RF Skin Tightening
+**Domain:** skintight.uk
 **Tech Stack:** Next.js 15 App Router, TypeScript, Tailwind CSS
 
-This template is designed for aesthetic clinics offering body treatments (Lipofirm, fat reduction, skin tightening). It includes a sophisticated lead qualification system with branching assessments and CRM integration.
+This template is designed for aesthetic clinics offering body treatments (RF skin tightening, fat reduction, body contouring). It includes a sophisticated lead qualification system with branching assessments and CRM integration.
 
 ## Development Commands
 
@@ -117,9 +117,9 @@ Sends to GHL (GoHighLevel) with formatted notes field:
   "primaryGoal": "Stubborn fat I cannot shift",
   "suitabilityScore": "Excellent",
   "suitabilityPoints": 85,
-  "recommendation": "Premium Lipofirm Course",
-  "recommendedPrice": "£1,200",
-  "recommendedSessions": "8 sessions",
+  "recommendation": "Consultation + First Treatment",
+  "recommendedPrice": "£50",
+  "recommendedSessions": "Personalised plan",
   "notes": "━━━ FORMATTED SUMMARY ━━━",
   "source": "body-assessment-landing",
   "assessmentVersion": "4.2"
@@ -166,18 +166,19 @@ Each page with external integrations has a CONFIG object at the top:
 ```typescript
 const CONFIG = {
   webhookUrl: 'https://services.leadconnectorhq.com/hooks/...',
-  whatsappNumber: '447476903007',
-  phoneNumber: '07476 903007',
-  email: 'kerry@mail.skintightbanbury.co.uk',
+  whatsappNumber: '447700173390',
+  phoneNumber: '07700 173390',
+  email: 'info@skintight.uk',
 }
 ```
 
 ### Treatment Pricing
 
-Update in `PremiumTreatments.tsx`:
-- Single session: £99 (intro offer)
-- 4-session course: £380
-- 8-session course: £770
+**Consultation-first model:**
+- Consultation + First Treatment: £50
+- Subsequent sessions: Personalised pricing based on client needs
+
+Michelle assesses each client during the consultation and creates a tailored treatment plan with custom pricing based on their specific goals and skin condition.
 
 ## SEO & Tracking
 

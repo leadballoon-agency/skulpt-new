@@ -4,32 +4,36 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "I've lost weight on Ozempic/Wegovy - can Lipofirm help with loose skin?",
-    answer: "Absolutely! This is one of the most common reasons clients come to us. GLP-1 medications like Ozempic, Wegovy, and Mounjaro are excellent for weight loss, but the rapid fat reduction can leave loose, saggy skin behind. Lipofirm uses radiofrequency technology to stimulate collagen production, tightening and firming the skin naturally without surgery."
+    question: "I've lost weight on Ozempic/Wegovy - can you help with loose skin?",
+    answer: "Absolutely! This is one of the most common reasons clients come to us. GLP-1 medications like Ozempic, Wegovy, and Mounjaro are excellent for weight loss, but the rapid fat reduction can leave loose, saggy skin behind. Our RF skin tightening technology stimulates collagen production, tightening and firming the skin naturally without surgery."
+  },
+  {
+    question: "What equipment do you use?",
+    answer: "We use UK medical-grade, CE-marked clinical equipment - not cheap imported machines that flood the market with similar-sounding claims. Our professional multi-technology system combines radiofrequency, vacuum therapy, and cavitation for superior results. This is the same calibre of equipment used in leading UK clinics, manufactured to the highest safety and efficacy standards."
   },
   {
     question: 'How soon after stopping GLP-1 medication can I have treatment?',
-    answer: "You can have Lipofirm treatment at any time - whether you're still on GLP-1 medication or have stopped. There's no waiting period required. Many clients start treatment while still on their medication to address loose skin as they lose weight, which can actually help prevent more skin laxity."
+    answer: "You can have treatment at any time - whether you're still on GLP-1 medication or have stopped. There's no waiting period required. Many clients start treatment while still on their medication to address loose skin as they lose weight, which can actually help prevent more skin laxity."
   },
   {
     question: 'Will skin tightening results last if I regain some weight?',
-    answer: "The collagen stimulation from Lipofirm creates lasting structural improvements in your skin. However, significant weight fluctuations can affect results over time. We recommend maintaining a stable weight for best long-term results. If you're concerned about weight maintenance after GLP-1 medications, we can discuss this during your consultation."
+    answer: "The collagen stimulation creates lasting structural improvements in your skin. However, significant weight fluctuations can affect results over time. We recommend maintaining a stable weight for best long-term results. If you're concerned about weight maintenance after GLP-1 medications, we can discuss this during your consultation."
   },
   {
-    question: 'Is Lipofirm treatment painful?',
-    answer: 'Lipofirm is a comfortable treatment. Most clients describe feeling a warm, pleasant sensation as the RF energy is delivered. The treatment is relaxing and many clients find it enjoyable. No anaesthetic is required.'
+    question: 'Is the treatment painful?',
+    answer: 'Our RF skin tightening is a comfortable treatment. Most clients describe feeling a warm, pleasant sensation as the RF energy is delivered. The treatment is relaxing and many clients find it enjoyable. No anaesthetic is required.'
   },
   {
     question: 'Is there any downtime?',
-    answer: 'One of the biggest advantages of Lipofirm is zero downtime! You can return to normal activities immediately after your session. Unlike surgical skin tightening procedures, there\'s no recovery period. Some clients experience mild warmth in the treated area, but this subsides quickly.'
+    answer: 'One of the biggest advantages is zero downtime! You can return to normal activities immediately after your session. Unlike surgical skin tightening procedures, there\'s no recovery period. Some clients experience mild warmth in the treated area, but this subsides quickly.'
   },
   {
     question: 'How many treatments will I need?',
-    answer: "We offer a 4 session course (£380) for visible results, or a full 8 session course (£770) for complete transformation. Start with a consultation + first session for just £99 to see how your skin responds. You'll start seeing improvements from session 3-4, with full results visible after completing the course."
+    answer: "Everyone's skin is different, which is why we start with a consultation + first treatment for just £50. During this session, Michelle will assess your skin, you'll experience the treatment firsthand, and she'll create a personalised plan with exactly the number of sessions you need for your goals. You'll start seeing improvements from session 3-4, with optimal results as you progress through your tailored course."
   },
   {
     question: 'Which areas can be treated for skin tightening?',
-    answer: "Lipofirm is effective on many areas affected by loose skin including tummy (most common after weight loss), arms ('bingo wings'), thighs, love handles, back, and chin/jawline. We'll assess your specific concerns during your free consultation."
+    answer: "Our treatment is effective on many areas affected by loose skin including tummy (most common after weight loss), arms ('bingo wings'), thighs, bum, love handles, and back. We'll assess your specific concerns during your consultation."
   },
   {
     question: 'When will I see skin tightening results?',
@@ -51,7 +55,7 @@ export default function FAQ({ onBookingClick }: FAQProps) {
           <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Skin Tightening FAQ</span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mt-2 sm:mt-3">
             Common Questions
-            <span className="block gradient-text">About Lipofirm</span>
+            <span className="block gradient-text">About Skin Tightening</span>
           </h2>
         </div>
 

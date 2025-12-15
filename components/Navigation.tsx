@@ -32,7 +32,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
       <div className="max-w-7xl mx-auto section-padding">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <span className="text-xl font-bold text-primary-600">Quartz Aesthetics</span>
+            <span className="text-xl font-bold text-primary-600">Skulpt Body Contouring</span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8">

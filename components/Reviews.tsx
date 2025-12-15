@@ -14,51 +14,51 @@ interface Review {
 export default function Reviews() {
   const reviews: Review[] = [
     {
-      name: "Sarah M.",
+      name: "Hannah-Sophia T.",
       rating: 5,
-      date: "2024-11-15",
-      treatment: "Lipofirm Course",
-      text: "Amazing results from my Lipofirm course! I've lost inches from my tummy and the skin is so much tighter. Pamela is so professional and makes you feel at ease. Highly recommend!",
+      date: "2024-09-15",
+      treatment: "ProMax Treatment",
+      text: "Michelle is incredibly professional and has a huge amount of knowledge and empathy. I have just finished a course of the pro max treatment on my tummy and I am unbelievably impressed by my results! Hugely recommend and just do it!",
       verified: true
     },
     {
-      name: "Rachel T.",
+      name: "Emma S.",
       rating: 5,
-      date: "2024-10-28",
-      treatment: "Body Sculpting",
-      text: "I was skeptical at first but after my course of treatments I can really see the difference. My arms are more toned and the bingo wings have reduced significantly. Great experience!",
+      date: "2024-07-20",
+      treatment: "ProMax Lipo",
+      text: "All I can say is Wow!! Even after my first Promax Lipo session I could see a difference. I had a full course and I was so so pleased with the results. Skulpt is a lovely clinic setting with a great team and fab machines!",
       verified: true
     },
     {
-      name: "Jennifer K.",
+      name: "Sana H.",
       rating: 5,
-      date: "2024-10-12",
-      treatment: "Lipofirm Treatment",
-      text: "Quartz Aesthetics is fantastic. The clinic is clean and welcoming, and Pamela really knows her stuff. I've had great results on my thighs and would definitely recommend to anyone considering body contouring.",
+      date: "2024-10-15",
+      treatment: "Body Contouring",
+      text: "Absolutely fantastic! I've just completed my 10th session and immediately booked another 10. Each session I notice a difference and I could not be more happy! Highly recommend!",
       verified: true
     },
     {
-      name: "Emma W.",
+      name: "Melissa B.",
       rating: 5,
-      date: "2024-09-20",
-      treatment: "Fat Reduction",
-      text: "So happy with my results! The treatment is relaxing and I've seen real changes in my problem areas. Pamela explains everything clearly and the aftercare advice was really helpful.",
+      date: "2024-04-18",
+      treatment: "LipoMax",
+      text: "I have just finished my 10 sessions with the LipoMax and actually saw results after just 3 sessions! I had a problematic lower tummy following my cesarean and the LipoMax has made my tummy completely flat and loose skin tightened!",
       verified: true
     },
     {
-      name: "Claire B.",
+      name: "Adila R.",
       rating: 5,
-      date: "2024-09-05",
+      date: "2024-06-05",
+      treatment: "ProMax Lipo",
+      text: "I have just finished a course of the pro max non invasive lipo and I can honestly say what a difference it has made. I have lost not only inches but it has noticeably tightened my skin. If you are sitting on the fence, just do it!",
+      verified: true
+    },
+    {
+      name: "Anna M.",
+      rating: 5,
+      date: "2024-04-10",
       treatment: "Skin Tightening",
-      text: "I came for skin tightening after weight loss and I'm thrilled with how much firmer my skin looks. The whole experience was lovely and I felt really looked after throughout.",
-      verified: true
-    },
-    {
-      name: "Louise H.",
-      rating: 5,
-      date: "2024-08-18",
-      treatment: "Lipofirm Course",
-      text: "Brilliant service from start to finish. Pamela is so knowledgeable and caring. My love handles have really reduced and I feel so much more confident. Worth every penny!",
+      text: "Just finished a course of Pro Max for losing inches and skin tightening. Really happy with the results - trousers fitting much better. Skin texture has really improved. I had this along side using weight loss injections to help target my belly area.",
       verified: true
     }
   ]
@@ -83,7 +83,7 @@ export default function Reviews() {
               ))}
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-neutral-900">5.0</p>
-            <p className="text-sm sm:text-base text-neutral-600 mt-1">Based on verified reviews</p>
+            <p className="text-sm sm:text-base text-neutral-600 mt-1">Based on 59 Google reviews</p>
           </div>
         </div>
 

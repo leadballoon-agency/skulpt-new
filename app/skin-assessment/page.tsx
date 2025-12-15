@@ -9,8 +9,8 @@ import { trackAssessmentStart, trackAssessmentComplete } from '@/components/Face
 // Configuration
 const CONFIG = {
   webhookUrl: 'https://services.leadconnectorhq.com/hooks/GVVaIBlAD0WmNtFQQ6KJ/webhook-trigger/e1ac65b4-49e7-4ae1-bd46-8b3958893a0c',
-  whatsappNumber: '447476903007',
-  phoneNumber: '07476 903007',
+  whatsappNumber: '447700173390',
+  phoneNumber: '07700 173390',
 }
 
 // Rotating pain point headlines - appeals to both fat loss AND skin tightening audiences
@@ -40,7 +40,7 @@ const getAcknowledgment = (goal: string, name: string): string => {
   const acks: Record<string, string> = {
     stubbornFat: `${name}, we understand how frustrating stubborn fat can be - especially when diet and exercise don't seem to help.`,
     looseSkin: `${name}, loose skin after changes in your body can really affect your confidence. Let's find the right solution.`,
-    both: `${name}, dealing with both stubborn fat and loose skin is more common than you think - and Lipofirm addresses both!`,
+    both: `${name}, dealing with both stubborn fat and loose skin is more common than you think - and our RF treatment addresses both!`,
     toneUp: `How exciting ${name}! Let's create a plan to get you looking and feeling amazing for your special occasion.`,
     postPregnancy: `${name}, your body has done something incredible. Now let's help you feel like yourself again.`,
   }
@@ -387,7 +387,7 @@ const allQuestions: Question[] = [
     section: 2,
     sectionName: 'Your Concerns',
     question: 'Are you researching any other treatments?',
-    subtext: 'This helps us explain how Lipofirm compares',
+    subtext: 'This helps us explain how our treatment compares',
     type: 'multi',
     options: [
       { value: 'morpheus8', label: 'Morpheus8', icon: '💉' },
@@ -395,7 +395,7 @@ const allQuestions: Question[] = [
       { value: 'coolsculpting', label: 'CoolSculpting / Fat freezing', icon: '❄️' },
       { value: 'cavitation', label: 'Ultrasonic cavitation', icon: '🔊' },
       { value: 'surgery', label: 'Surgical options (lipo/tummy tuck)', icon: '🏥' },
-      { value: 'none', label: 'No, just researching Lipofirm', icon: '✨' },
+      { value: 'none', label: 'No, just researching Skulpt', icon: '✨' },
     ],
   },
 
@@ -502,7 +502,7 @@ function calculateSuitability(answers: Record<string, any>) {
 
   // Primary goal scoring
   if (answers.primaryGoal === 'both') {
-    score += 3 // Both fat and skin = ideal Lipofirm candidate
+    score += 3 // Both fat and skin = ideal candidate
   } else if (['stubbornFat', 'looseSkin'].includes(answers.primaryGoal)) {
     score += 2
   } else if (answers.primaryGoal === 'toneUp' || answers.primaryGoal === 'postPregnancy') {
@@ -517,10 +517,10 @@ function calculateSuitability(answers: Record<string, any>) {
     if (['years', 'always'].includes(answers.stubbornFat_duration)) {
       score += 1
     }
-    // Diet/exercise hasn't worked = ideal for Lipofirm
+    // Diet/exercise hasn't worked = ideal for RF treatment
     if (['noChange', 'exceptStubborn'].includes(answers.stubbornFat_dietExercise)) {
       score += 2
-      tips.push('Since diet and exercise haven\'t fully addressed your stubborn areas, Lipofirm can target those spots that won\'t budge.')
+      tips.push('Since diet and exercise haven\'t fully addressed your stubborn areas, our RF treatment can target those spots that won\'t budge.')
     }
   }
 
@@ -596,7 +596,7 @@ function calculateSuitability(answers: Record<string, any>) {
 
   // Concern type
   if (answers.concernType === 'both') {
-    score += 2 // Both fat and skin = perfect for Lipofirm
+    score += 2 // Both fat and skin = perfect for RF treatment
   } else if (['fat', 'skin', 'lackTone'].includes(answers.concernType)) {
     score += 1
   }
@@ -606,7 +606,7 @@ function calculateSuitability(answers: Record<string, any>) {
   if (tried.includes('diet') && tried.includes('exercise')) {
     score += 2
     if (answers.primaryGoal !== 'stubbornFat') { // Don't duplicate tip
-      tips.push('Since diet and exercise haven\'t fully addressed your concerns, Lipofirm can target those stubborn areas that won\'t budge.')
+      tips.push('Since diet and exercise haven\'t fully addressed your concerns, our RF treatment can target those stubborn areas that won\'t budge.')
     }
   }
 
@@ -654,34 +654,32 @@ function calculateSuitability(answers: Record<string, any>) {
   if (score >= 10) {
     suitability = 'excellent'
     recommendation = {
-      treatment: 'Full Course - 8 Sessions',
-      price: '£770',
-      oldPrice: '£960',
-      sessions: 8,
+      treatment: 'Consultation + First Treatment',
+      price: '£50',
+      sessions: 1,
       description: isFatFocused
-        ? 'Our comprehensive body sculpting package. 8 weekly sessions combining RF fat reduction with muscle toning for maximum inch loss and contouring.'
+        ? 'You\'re an excellent candidate! Start with a consultation where Michelle will assess your needs and create a comprehensive treatment plan for maximum inch loss and contouring.'
         : isSkinFocused
-        ? 'Our comprehensive transformation package. 8 weekly sessions for maximum collagen stimulation and visible firming.'
-        : 'Our complete transformation package. 8 weekly sessions targeting both stubborn fat and loose skin for maximum results.',
+        ? 'You\'re an excellent candidate for skin tightening! Start with a consultation where Michelle will create a tailored plan for visible firming results.'
+        : 'You\'re an excellent candidate! Start with a consultation where Michelle will assess your specific concerns and create a personalised treatment plan.',
     }
   } else if (score >= 6) {
     suitability = 'good'
     recommendation = {
-      treatment: '4 Session Course',
-      price: '£380',
-      oldPrice: '£480',
-      sessions: 4,
+      treatment: 'Consultation + First Treatment',
+      price: '£50',
+      sessions: 1,
       description: isFatFocused
-        ? '4 weekly sessions for targeted fat reduction and body contouring. Great for focusing on specific problem areas.'
-        : '4 weekly sessions for targeted tightening and toning. Great for moderate concerns or focusing on specific areas.',
+        ? 'Great candidate for targeted treatment! Your consultation includes a first session, then Michelle will recommend the right number of sessions for your goals.'
+        : 'Great candidate for skin tightening! Your consultation includes a first session, then Michelle will create a plan tailored to your specific areas of concern.',
     }
   } else {
     suitability = 'moderate'
     recommendation = {
-      treatment: 'Consultation + First Session',
-      price: '£99',
+      treatment: 'Consultation + First Treatment',
+      price: '£50',
       sessions: 1,
-      description: 'Try our Lipofirm treatment with a full consultation. Perfect to experience the treatment, see initial results, and discuss a personalised plan.',
+      description: 'Start with a consultation and first treatment session. Michelle will assess your skin, you\'ll experience the technology firsthand, and she\'ll advise on the best approach for your goals.',
     }
   }
 
@@ -1039,9 +1037,9 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-10 h-10 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">QA</span>
+                <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="font-display font-bold text-lg text-neutral-900 hidden sm:block">Quartz Aesthetics</span>
+              <span className="font-display font-bold text-lg text-neutral-900 hidden sm:block">Skulpt Body Contouring</span>
             </Link>
             <a
               href={`tel:+${CONFIG.whatsappNumber}`}
@@ -1113,7 +1111,7 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
               <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              From £99
+              From £50
             </div>
           </div>
         </div>
@@ -1123,9 +1121,9 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 mb-4">How Lipofirm Works</h2>
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">How Our Treatment Works</h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Our advanced RF technology tightens skin by stimulating collagen production deep in the dermis
+              UK medical-grade technology combining three powerful modalities for superior results
             </p>
           </div>
 
@@ -1134,7 +1132,7 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
               <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🔥</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">TriLipo RF Energy</h3>
+              <h3 className="text-xl font-bold mb-2">Multi-Polar RF Energy</h3>
               <p className="text-neutral-600">
                 Radiofrequency heats the deep layers of skin, causing immediate collagen contraction for instant tightening
               </p>
@@ -1142,11 +1140,11 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
 
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💪</span>
+                <span className="text-3xl">💆</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Dynamic Muscle Activation</h3>
+              <h3 className="text-xl font-bold mb-2">Vacuum Massage</h3>
               <p className="text-neutral-600">
-                DMA technology stimulates muscles for enhanced toning while improving lymphatic drainage
+                Powerful lymphatic drainage removes toxins and enhances circulation for improved cellulite reduction
               </p>
             </div>
 
@@ -1154,9 +1152,9 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
               <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">✨</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">New Collagen Production</h3>
+              <h3 className="text-xl font-bold mb-2">Ultrasonic Cavitation</h3>
               <p className="text-neutral-600">
-                Stimulates fibroblasts to produce new collagen for long-lasting skin firmness over 8-12 weeks
+                Sound waves target stubborn fat cells for inch loss while stimulating new collagen production
               </p>
             </div>
           </div>
@@ -1165,150 +1163,84 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
 
       {/* Pricing Section */}
       <section className="py-16 bg-neutral-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral-900 mb-4">Treatment Packages</h2>
-            <p className="text-lg text-neutral-600">Choose the package that best fits your goals</p>
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">Get Started</h2>
+            <p className="text-lg text-neutral-600">Your journey to tighter skin begins with a consultation</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Trial */}
-            <div className="bg-white rounded-2xl p-6 border-2 border-neutral-200">
-              <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 bg-neutral-100 text-neutral-600 text-sm font-medium rounded-full mb-4">
-                  TRY IT
-                </span>
-                <h3 className="text-xl font-bold mb-1">Consultation + First Session</h3>
-                <p className="text-3xl font-bold text-primary-600">£99</p>
-              </div>
-              <ul className="space-y-3 text-neutral-600 mb-6">
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Full consultation
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  1 treatment session
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Personalised plan
-                </li>
-              </ul>
-              <button
-                onClick={openModal}
-                className="w-full py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-xl hover:bg-primary-50 transition-colors"
-              >
-                Take Assessment
-              </button>
-            </div>
-
-            {/* 4 Sessions */}
-            <div className="bg-white rounded-2xl p-6 border-2 border-neutral-200">
-              <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 text-sm font-medium rounded-full mb-4">
-                  SAVE 20%
-                </span>
-                <h3 className="text-xl font-bold mb-1">4 Session Course</h3>
-                <p className="text-neutral-400 line-through text-sm">£480</p>
-                <p className="text-3xl font-bold text-primary-600">£380</p>
-              </div>
-              <ul className="space-y-3 text-neutral-600 mb-6">
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  4 weekly sessions
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Visible tightening
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Ongoing support
-                </li>
-              </ul>
-              <button
-                onClick={openModal}
-                className="w-full py-3 border-2 border-primary-500 text-primary-600 font-semibold rounded-xl hover:bg-primary-50 transition-colors"
-              >
-                Take Assessment
-              </button>
-            </div>
-
-            {/* 8 Sessions - Popular */}
-            <div className="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-6 border-2 border-primary-300 relative">
+          <div className="max-w-lg mx-auto">
+            {/* Main Offer */}
+            <div className="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 border-2 border-primary-300 relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <span className="inline-block px-4 py-1 bg-primary-500 text-white text-sm font-bold rounded-full">
-                  BEST VALUE
+                  LIMITED OFFER
                 </span>
               </div>
               <div className="text-center mb-6 pt-2">
-                <h3 className="text-xl font-bold mb-1">Full Course - 8 Sessions</h3>
-                <p className="text-neutral-400 line-through text-sm">£960</p>
-                <p className="text-3xl font-bold text-primary-600">£770</p>
+                <h3 className="text-2xl font-bold mb-2">Consultation + First Treatment</h3>
+                <p className="text-4xl font-bold text-primary-600 mb-2">£50</p>
+                <p className="text-neutral-600">Experience our UK medical-grade technology</p>
               </div>
               <ul className="space-y-3 text-neutral-600 mb-6">
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  8 weekly sessions
+                  Full skin assessment with Michelle
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Maximum transformation
+                  Your first treatment session included
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Save £190
+                  Personalised treatment plan created for your goals
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Tailored course pricing based on your specific needs
                 </li>
               </ul>
               <button
                 onClick={openModal}
-                className="w-full py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:from-primary-600 hover:to-primary-700 transition-colors"
+                className="w-full py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-bold text-lg rounded-xl hover:from-primary-600 hover:to-primary-700 transition-colors"
               >
-                Take Assessment
+                Take Assessment & Book
               </button>
+              <p className="text-center text-sm text-neutral-500 mt-4">
+                No pressure, no hard sell — just honest advice
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Pamela */}
+      {/* About Your Team */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
-              <div className="relative w-48 h-48 mx-auto">
-                <Image
-                  src="/images/Pamela-Crombie.jpeg"
-                  alt="Pamela Crombie - Skin Tightening Specialist"
-                  fill
-                  className="rounded-2xl object-cover"
-                />
+              <div className="relative w-48 h-48 mx-auto bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-white/50 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-2xl font-bold text-primary-600">M&M</span>
+                  </div>
+                  <p className="text-primary-700 font-medium text-xs">Photo coming soon</p>
+                </div>
               </div>
             </div>
             <div className="md:w-2/3 text-center md:text-left">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-2">Meet Pamela Crombie</h2>
-              <p className="text-primary-600 font-medium mb-4">Your Skin Tightening Specialist</p>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-2">Meet Michelle & Magda</h2>
+              <p className="text-primary-600 font-medium mb-4">Your Expert Team at Skulpt</p>
               <p className="text-neutral-600 leading-relaxed">
-                With extensive experience in advanced aesthetic treatments, Pamela specialises in helping clients achieve their body confidence goals after weight loss. She understands the frustration of loose skin after working hard to lose weight, and is passionate about delivering visible, lasting results with Lipofirm technology.
+                At Skulpt Body Contouring, Michelle and Magda bring years of experience helping clients achieve their body goals. Whether you&apos;ve lost weight through GLP-1 medications like Ozempic and Wegovy, or traditional methods, our team specialises in tightening loose skin and contouring your body using advanced medical-grade technology.
               </p>
             </div>
           </div>
@@ -1357,7 +1289,7 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                 <span className="text-primary-500 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-neutral-600">
-                Yes! Lipofirm is ideal for tightening loose skin after GLP-1 medication weight loss. The rapid weight loss from these medications can leave excess skin, and our RF technology is specifically designed to address this.
+                Yes! Our RF treatment is ideal for tightening loose skin after GLP-1 medication weight loss. The rapid weight loss from these medications can leave excess skin, and our technology is specifically designed to address this.
               </p>
             </details>
           </div>
@@ -1690,7 +1622,7 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                     </button>
 
                     <p className="text-xs text-neutral-500 text-center">
-                      By submitting, you agree to receive your assessment results and treatment information from Quartz Aesthetics.
+                      By submitting, you agree to receive your assessment results and treatment information from Skulpt Body Contouring.
                     </p>
                   </div>
 
@@ -1775,9 +1707,9 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                             <span>💉</span> Comparing to Morpheus8?
                           </h4>
                           <p className="text-sm text-blue-900">
-                            Unlike Morpheus8&apos;s microneedling, Lipofirm is completely non-invasive with <strong>no needles</strong>.
+                            Unlike Morpheus8&apos;s microneedling, our RF treatment is completely non-invasive with <strong>no needles</strong>.
                             You&apos;ll experience a comfortable, warm massage-like sensation with zero downtime.
-                            Plus, our 8-session course (£770) is significantly more affordable than typical Morpheus8 pricing (£1,000+).
+                            Plus, our treatment courses are significantly more affordable than typical Morpheus8 pricing (£1,000+), with personalised pricing based on your needs.
                           </p>
                         </div>
                       )}
@@ -1788,8 +1720,8 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                             <span>🔊</span> Comparing to HIFU?
                           </h4>
                           <p className="text-sm text-purple-900">
-                            While HIFU targets deeper tissue, Lipofirm&apos;s unique combination of RF + <strong>Dynamic Muscle Activation (DMA)</strong> not only
-                            tightens skin but also tones the underlying muscle. More comfortable than HIFU, with gradual results over your course of treatments.
+                            While HIFU targets deeper tissue, our UK medical-grade system combines <strong>RF + vacuum massage + cavitation</strong> for
+                            comprehensive skin tightening and contouring. More comfortable than HIFU, with gradual results over your course of treatments.
                           </p>
                         </div>
                       )}
@@ -1800,9 +1732,9 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                             <span>🔥</span> Comparing to Thermage?
                           </h4>
                           <p className="text-sm text-orange-900">
-                            Both use RF technology, but Lipofirm adds <strong>Dynamic Muscle Activation</strong> for enhanced toning.
-                            Our 8-session course (£770) offers better value than a single Thermage session (typically £600-2000),
-                            with a more comfortable experience.
+                            Both use RF technology, but our UK medical-grade treatment adds <strong>vacuum massage and cavitation</strong> for enhanced results.
+                            Our treatment courses offer exceptional value compared to a single Thermage session (typically £600-2000),
+                            with a more comfortable experience and pricing tailored to your needs.
                           </p>
                         </div>
                       )}
@@ -1813,8 +1745,8 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                             <span>❄️</span> Comparing to CoolSculpting?
                           </h4>
                           <p className="text-sm text-cyan-900">
-                            CoolSculpting targets fat reduction, while Lipofirm focuses on <strong>skin tightening and toning</strong>.
-                            If loose skin after weight loss is your main concern (rather than stubborn fat), Lipofirm may be more suitable for your goals.
+                            CoolSculpting targets fat reduction, while our RF treatment focuses on <strong>skin tightening and toning</strong>.
+                            If loose skin after weight loss is your main concern (rather than stubborn fat), RF skin tightening may be more suitable for your goals.
                           </p>
                         </div>
                       )}
@@ -1825,8 +1757,8 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
                             <span>🏥</span> Considering Surgery?
                           </h4>
                           <p className="text-sm text-rose-900">
-                            Try Lipofirm first - it&apos;s the <strong>non-surgical alternative</strong> that many clients use to avoid going under the knife.
-                            No anaesthesia, no scarring, no recovery time. Start with our £99 trial to see if non-surgical works for you.
+                            Try our RF treatment first - it&apos;s the <strong>non-surgical alternative</strong> that many clients use to avoid going under the knife.
+                            No anaesthesia, no scarring, no recovery time. Start with our £50 consultation + treatment to see if non-surgical works for you.
                           </p>
                         </div>
                       )}

@@ -8,35 +8,33 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
   const treatments = [
     {
       icon: '✦',
-      title: 'Consultation + First Session',
-      description: 'Try RF skin tightening',
-      features: ['Free skin consultation', 'Full treatment session', 'Personalised plan', 'No obligation'],
-      price: '£99',
+      title: 'Consultation + First Treatment',
+      description: 'Experience our UK medical-grade technology',
+      features: ['Full skin assessment', 'First treatment session', 'Personalised plan created', 'Tailored course pricing'],
+      price: '£50',
       gradient: 'from-primary-400 to-primary-600',
-      popular: false,
-      badge: 'TRY IT'
+      popular: true,
+      badge: 'LIMITED OFFER'
     },
     {
-      icon: '💎',
-      title: '4 Session Course',
-      description: 'Visible skin tightening',
-      features: ['4 weekly sessions', 'Collagen stimulation begins', 'Noticeable firming', 'Payment plans available'],
-      price: '£380',
-      oldPrice: '£480',
+      icon: '🎯',
+      title: 'Targeted Course',
+      description: 'For mild to moderate concerns',
+      features: ['Number of sessions tailored to you', 'Visible skin tightening', 'Ongoing progress reviews', 'Flexible scheduling'],
+      price: 'From consultation',
       gradient: 'from-primary-400 to-primary-600',
       popular: false,
-      badge: 'SAVE 20%'
+      badge: 'PERSONALISED'
     },
     {
       icon: '✨',
-      title: 'Full Course - 8 Sessions',
-      description: 'Complete skin transformation',
-      features: ['8 weekly sessions', 'Maximum collagen stimulation', 'Full skin tightening results', 'Payment plans available'],
-      price: '£770',
-      oldPrice: '£960',
+      title: 'Transformation Course',
+      description: 'For significant skin laxity',
+      features: ['Extended treatment plan', 'Maximum results', 'Multiple area treatment', 'Full ongoing support'],
+      price: 'From consultation',
       gradient: 'from-primary-500 to-primary-700',
-      popular: true,
-      badge: 'BEST VALUE'
+      popular: false,
+      badge: 'COMPREHENSIVE'
     }
   ]
 
@@ -50,7 +48,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
             <span className="gradient-text"> Loose Skin</span>
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-neutral-600 max-w-2xl mx-auto px-4">
-            RF technology to tighten skin after weight loss - perfect for post-Ozempic, Wegovy or Mounjaro
+            Medical-grade technology to tighten skin after weight loss - perfect for post-Ozempic, Wegovy or Mounjaro
           </p>
         </div>
 
