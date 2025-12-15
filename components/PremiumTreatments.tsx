@@ -99,9 +99,6 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
 
                 <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-neutral-100 mt-auto">
                   <div>
-                    {treatment.oldPrice && (
-                      <p className="text-xs sm:text-sm text-neutral-400 line-through mb-1">{treatment.oldPrice}</p>
-                    )}
                     <p className="text-xl sm:text-2xl font-bold gradient-text">{treatment.price}</p>
                   </div>
                   <button
