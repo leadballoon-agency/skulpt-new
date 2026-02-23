@@ -51,8 +51,8 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
         onClick={onClose}
       />
 
-      {/* Video Container - Square format */}
-      <div className="relative w-full h-full sm:h-auto sm:max-h-[90vh] sm:max-w-2xl sm:aspect-square bg-black sm:rounded-3xl shadow-2xl overflow-hidden animate-modal-slide-up">
+      {/* Video Container - Portrait format */}
+      <div className="relative w-full h-full sm:h-auto sm:max-h-[90vh] sm:max-w-md sm:aspect-[9/16] bg-black sm:rounded-3xl shadow-2xl overflow-hidden animate-modal-slide-up">
 
         {/* Close Button */}
         <button
@@ -73,7 +73,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             controls
             playsInline
           >
-            <source src="https://storage.googleapis.com/msgsndr/dVD6QbgqAF7fiHM3MCrz/media/68ccf6fc30c733533492d2e6.mp4" type="video/mp4" />
+            <source src="https://assets.cdn.filesafe.space/dVD6QbgqAF7fiHM3MCrz/media/699cb9b0d0716b0108473253.mp4" type="video/mp4" />
             <p className="text-white text-center p-4">
               Your browser doesn't support video playback.
             </p>

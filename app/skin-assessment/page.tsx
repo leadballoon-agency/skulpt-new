@@ -1227,20 +1227,19 @@ ${tips.map(t => `• ${t}`).join('\n')}` : ''}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
-              <div className="relative w-48 h-48 mx-auto bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-white/50 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-2xl font-bold text-primary-600">M&M</span>
-                  </div>
-                  <p className="text-primary-700 font-medium text-xs">Photo coming soon</p>
-                </div>
+              <div className="relative w-48 h-48 mx-auto rounded-2xl overflow-hidden">
+                <img
+                  src="/images/Michelle.jpeg"
+                  alt="Michelle - Skulpt Body Contouring Expert"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="md:w-2/3 text-center md:text-left">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-2">Meet Michelle & Magda</h2>
-              <p className="text-primary-600 font-medium mb-4">Your Expert Team at Skulpt</p>
+              <h2 className="text-2xl font-bold text-neutral-900 mb-2">Meet Michelle</h2>
+              <p className="text-primary-600 font-medium mb-4">Your Expert at Skulpt</p>
               <p className="text-neutral-600 leading-relaxed">
-                At Skulpt Body Contouring, Michelle and Magda bring years of experience helping clients achieve their body goals. Whether you&apos;ve lost weight through GLP-1 medications like Ozempic and Wegovy, or traditional methods, our team specialises in tightening loose skin and contouring your body using advanced medical-grade technology.
+                At Skulpt Body Contouring, Michelle brings years of experience helping clients achieve their body goals. Whether you&apos;ve lost weight through GLP-1 medications like Ozempic and Wegovy, or traditional methods, she specialises in tightening loose skin and contouring your body using advanced medical-grade technology.
               </p>
             </div>
           </div>
