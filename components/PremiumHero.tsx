@@ -46,7 +46,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                   <p className="text-xs sm:text-sm text-white font-medium">Consultation & Treatment</p>
                 </div>
                 <div className="text-center bg-white/20 backdrop-blur rounded-xl p-4 shadow-md flex-1">
-                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">59</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">69</p>
                   <p className="text-xs sm:text-sm text-white font-medium">5-Star Reviews</p>
                 </div>
               </div>

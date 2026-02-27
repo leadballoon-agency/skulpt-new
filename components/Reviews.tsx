@@ -14,51 +14,51 @@ interface Review {
 export default function Reviews() {
   const reviews: Review[] = [
     {
-      name: "Hannah-Sophia T.",
+      name: "Preciousss X.",
       rating: 5,
-      date: "2024-09-15",
-      treatment: "ProMax Treatment",
-      text: "Michelle is incredibly professional and has a huge amount of knowledge and empathy. I have just finished a course of the pro max treatment on my tummy and I am unbelievably impressed by my results! Hugely recommend and just do it!",
+      date: "2026-02-19",
+      treatment: "ProMax Skin Tightening",
+      text: "Decided to use Michelle at Skulpt Body Contouring after giving birth. Since finishing a course of pro max skin tightening and fat reduction I have lost 7 inches from around my tummy area, not only this but my stretch marks have faded!",
       verified: true
     },
     {
-      name: "Emma S.",
+      name: "Mita P.",
       rating: 5,
-      date: "2024-07-20",
-      treatment: "ProMax Lipo",
-      text: "All I can say is Wow!! Even after my first Promax Lipo session I could see a difference. I had a full course and I was so so pleased with the results. Skulpt is a lovely clinic setting with a great team and fab machines!",
+      date: "2026-02-12",
+      treatment: "Fat Melting & Skin Tightening",
+      text: "I have just finished a course of fat melting and skin tightening with Michelle at Skulpt body contouring, and I'm so thrilled I've lost 6 inches all round and this treatment has really helped my tummy fat and tightened my skin!!! If you are thinking about doing this treatment just do it!! You won't regret it!!",
+      verified: true
+    },
+    {
+      name: "Vikki B.",
+      rating: 5,
+      date: "2026-01-26",
+      treatment: "Body Contouring",
+      text: "Michelle is truly a master of her craft. I came to her looking for help with some stubborn areas, and the transformation has been life-changing. I feel so much more comfortable and confident in my own skin now. She has an incredible eye for detail.",
+      verified: true
+    },
+    {
+      name: "Hannah-Sophia T.",
+      rating: 5,
+      date: "2025-09-15",
+      treatment: "ProMax Treatment",
+      text: "Michelle is incredibly professional and has a huge amount of knowledge and empathy. I have just finished a course of the pro max treatment on my tummy and I am unbelievably impressed by my results! I have just purchased another course for my legs. Hugely recommend and just do it!",
       verified: true
     },
     {
       name: "Sana H.",
       rating: 5,
-      date: "2024-10-15",
+      date: "2025-10-15",
       treatment: "Body Contouring",
       text: "Absolutely fantastic! I've just completed my 10th session and immediately booked another 10. Each session I notice a difference and I could not be more happy! Highly recommend!",
       verified: true
     },
     {
-      name: "Melissa B.",
+      name: "Nadz",
       rating: 5,
-      date: "2024-04-18",
-      treatment: "LipoMax",
-      text: "I have just finished my 10 sessions with the LipoMax and actually saw results after just 3 sessions! I had a problematic lower tummy following my cesarean and the LipoMax has made my tummy completely flat and loose skin tightened!",
-      verified: true
-    },
-    {
-      name: "Adila R.",
-      rating: 5,
-      date: "2024-06-05",
-      treatment: "ProMax Lipo",
-      text: "I have just finished a course of the pro max non invasive lipo and I can honestly say what a difference it has made. I have lost not only inches but it has noticeably tightened my skin. If you are sitting on the fence, just do it!",
-      verified: true
-    },
-    {
-      name: "Anna M.",
-      rating: 5,
-      date: "2024-04-10",
-      treatment: "Skin Tightening",
-      text: "Just finished a course of Pro Max for losing inches and skin tightening. Really happy with the results - trousers fitting much better. Skin texture has really improved. I had this along side using weight loss injections to help target my belly area.",
+      date: "2025-09-10",
+      treatment: "Body Contouring",
+      text: "Excellent customer service, fantastic results!! Such a confidence boost! They won't be able to get rid of me now, loyal customer for life! Thanks girls xx",
       verified: true
     }
   ]
@@ -83,7 +83,7 @@ export default function Reviews() {
               ))}
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-neutral-900">5.0</p>
-            <p className="text-sm sm:text-base text-neutral-600 mt-1">Based on 59 Google reviews</p>
+            <p className="text-sm sm:text-base text-neutral-600 mt-1">Based on 69 Google reviews</p>
           </div>
         </div>
 

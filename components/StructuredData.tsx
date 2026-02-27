@@ -302,7 +302,7 @@ export default function StructuredData() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "59",
+      "reviewCount": "69",
       "bestRating": "5",
       "worstRating": "1"
     },

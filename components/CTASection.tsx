@@ -76,7 +76,7 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
                 <span key={i} className="text-yellow-400 text-lg sm:text-xl">★</span>
               ))}
             </div>
-            <p className="text-xs sm:text-sm text-white/80">59 Reviews on Google</p>
+            <p className="text-xs sm:text-sm text-white/80">69 Reviews on Google</p>
           </div>
 
           <div className="hidden sm:block w-px h-12 bg-white/30"></div>
